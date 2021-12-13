@@ -3,6 +3,7 @@ import element from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import App from "./App.vue";
 import router from "./router";
+import store from "./store";
 import "./icons";
 import "./mock/index.js";
 import request from "./utils/request";
@@ -21,5 +22,6 @@ Vue.use(Antd);
 
 new Vue({
   router: router,
+  store: store,
   render: (h) => h(App),
 }).$mount("#app");

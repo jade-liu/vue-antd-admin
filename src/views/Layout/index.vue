@@ -9,7 +9,7 @@
   <div class="app-container">
     <div class="header">
       <img src="../../assets/logo.png" height="38px" width="38px" />
-      <div>前端Vue练习</div>
+      <div>组件测试</div>
     </div>
     <div class="container">
       <div class="sidebar">
@@ -20,6 +20,11 @@
           active-text-color="#ffd04b"
           style="width: 215px"
         >
+          <router-link to="/antForm">
+            <el-menu-item>
+              <span slot="title">Ant Design Form测试</span>
+            </el-menu-item>
+          </router-link>
           <router-link to="/largeDataDomRenderTest">
             <el-menu-item>
               <span slot="title">大数据渲染bug修改</span>

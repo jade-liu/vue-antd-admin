@@ -50,6 +50,7 @@ module.exports = {
     // ...
   },
   chainWebpack(config) {
+    config.resolve.alias.set("@", resolve("./src"));
     // 已有配置排除掉svg
     config.module.rule("svg").exclude.add(resolve("src/icons")).end();
     //配置svg

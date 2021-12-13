@@ -7,12 +7,17 @@ const routes = [
   {
     path: "",
     name: "home",
-    component: () => import("../views/Home/index.vue"),
+    component: () => import("@/views/Home/index.vue"),
+  },
+  {
+    path: "/antForm",
+    name: "antForm",
+    component: () => import("@/views/AntdForm/index.vue"),
   },
   {
     path: "/largeDataDomRenderTest",
     name: "largeDataDomRenderTest",
-    component: () => import("../views/LargeDataDomRenderTest/index.vue"),
+    component: () => import("@/views/LargeDataDomRenderTest/index.vue"),
   },
 ];
 
