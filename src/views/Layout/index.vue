@@ -13,24 +13,22 @@
     </div>
     <div class="container">
       <div class="sidebar">
-        <el-menu
-          default-active="2"
-          background-color="#001529"
-          text-color="#fff"
-          active-text-color="#ffd04b"
+        <a-menu
           style="width: 215px"
+          :default-selected-keys="['1']"
+          :default-open-keys="['sub1']"
+          mode="inline"
+          theme="dark"
+          :selected-keys="[selectedKey]"
+          @click="changeMenu"
         >
-          <router-link to="/antForm">
-            <el-menu-item>
-              <span slot="title">Ant Design Form测试</span>
-            </el-menu-item>
-          </router-link>
-          <router-link to="/largeDataDomRenderTest">
-            <el-menu-item>
-              <span slot="title">大数据渲染bug修改</span>
-            </el-menu-item>
-          </router-link>
-        </el-menu>
+            <a-menu-item key="antForm">
+              Ant Design Form测试
+            </a-menu-item>
+            <a-menu-item key="largeDataDomRenderTest">
+              大数据渲染bug修改
+            </a-menu-item>
+        </a-menu>
       </div>
       <el-scrollbar class="scrollbar">
         <div class="main-content">
@@ -44,6 +42,17 @@
 <script>
 export default {
   name: "Layout",
+  data() {
+    return {
+      selectedKey: ''
+    }
+  },
+  methods: {
+     changeMenu(e) {
+       this.selectedKey = e.key
+       this.$router.push(`/${e.key}`)
+     }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -78,7 +87,7 @@ export default {
 .scrollbar {
   height: calc(100vh - 48px);
   width: 100%;
-  ::v-deep .el-scrollbar__wrap {
+  ::v-deep .a-scrollbar__wrap {
     overflow-x: hidden;
   }
 }
