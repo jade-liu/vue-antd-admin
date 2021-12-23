@@ -3,16 +3,16 @@ const state = {
 }
 
 const mutations = {
-  SET_USERNAME: (state, username) => {
+  update: (state, username) => {
     state.username = username;
   },
 };
 
 const actions = {
-    setUsername: ({commit}, username) => {
-        commit("SET_USERNAME", username);
-    }
-}
+  update: ({ commit }, username) => {
+    commit("update", username);
+  },
+};
 
 export default {
   state,
