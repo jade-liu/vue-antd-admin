@@ -23,6 +23,16 @@ const routes = [
     name: "largeDataDomRenderTest",
     component: () => import("@/views/LargeDataDomRenderTest/index.vue"),
   },
+  {
+    path: "/testRender",
+    name: "testRender",
+    component: () => import("@/views/TestRender/index.vue"),
+  },
+  {
+    path: "/antdTable",
+    name: "antdTable",
+    component: () => import("@/views/AntdTable/index.vue"),
+  },
 ];
 
 const router = new Router({

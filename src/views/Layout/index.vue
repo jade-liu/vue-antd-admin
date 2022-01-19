@@ -28,6 +28,12 @@
             <a-menu-item key="largeDataDomRenderTest">
               大数据渲染bug修改
             </a-menu-item>
+            <a-menu-item key="testRender">
+              测试render
+            </a-menu-item>
+            <a-menu-item key="antdTable">
+              Ant Design Table测试
+            </a-menu-item>
         </a-menu>
       </div>
       <el-scrollbar class="scrollbar">
