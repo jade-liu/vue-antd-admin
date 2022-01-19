@@ -43,3 +43,8 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+/deep/.ant-table-tbody > tr > td {
+padding: 6px;
+}
+</style>
