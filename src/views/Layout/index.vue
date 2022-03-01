@@ -22,7 +22,7 @@
           :selected-keys="[selectedKey]"
           @click="changeMenu"
         >
-            <a-menu-item key="antForm">
+            <a-menu-item key="antdForm">
               Ant Design Form测试
             </a-menu-item>
             <a-menu-item key="largeDataDomRenderTest">
@@ -33,6 +33,9 @@
             </a-menu-item>
             <a-menu-item key="antdTable">
               Ant Design Table测试
+            </a-menu-item>
+            <a-menu-item key="vxeTable">
+              Vxe Table测试
             </a-menu-item>
         </a-menu>
       </div>

@@ -14,8 +14,8 @@ const routes = [
     component: () => import("@/views/Home/index.vue"),
   },
   {
-    path: "/antForm",
-    name: "antForm",
+    path: "/antdForm",
+    name: "antdForm",
     component: () => import("@/views/AntdForm/index.vue"),
   },
   {
@@ -32,6 +32,11 @@ const routes = [
     path: "/antdTable",
     name: "antdTable",
     component: () => import("@/views/AntdTable/index.vue"),
+  },
+  {
+    path: "/vxeTable",
+    name: "vxeTable",
+    component: () => import("@/views/VxeTable/index.vue"),
   },
 ];
 

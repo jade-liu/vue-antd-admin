@@ -24,7 +24,8 @@ export default {
   render(h) {
     //   const height = document.documentElement.clientHeight;
     //   const data = { style: {height: height, width: '300px', background: 'pink'} }
-      return h('div', { style: {height: '200px', width: '300px', background: 'pink'} }, '1111')
+      // return h('div', { style: {height: '200px', width: '300px', background: 'pink'} }, '1111')
+      return h('el-link', { attrs: { 'href': 'wwww.baidu.com', target: '_blank', type: 'primary', underline: true} }, '1111111')
   },
   methods: {},
 };

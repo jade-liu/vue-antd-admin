@@ -10,6 +10,12 @@ import "./icons";
 import "./mock/index.js";
 import request from "./utils/request";
 
+import "xe-utils";
+import VXETable from "vxe-table";
+import "vxe-table/lib/style.css";
+
+Vue.use(VXETable);
+
 Vue.prototype.$request = request;
 
 Vue.config.productionTip = false;
