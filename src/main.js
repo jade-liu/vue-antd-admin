@@ -3,6 +3,8 @@ import element from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import Antd from "ant-design-vue";
 import "ant-design-vue/dist/antd.css";
+import Vant from "vant";
+import "vant/lib/index.css";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -14,7 +16,6 @@ import "xe-utils";
 import VXETable from "vxe-table";
 import "vxe-table/lib/style.css";
 
-Vue.use(VXETable);
 
 Vue.prototype.$request = request;
 
@@ -25,6 +26,10 @@ Vue.use(element, {
 });
 
 Vue.use(Antd);
+
+Vue.use(Vant);
+
+Vue.use(VXETable);
 
 new Vue({
   router: router,

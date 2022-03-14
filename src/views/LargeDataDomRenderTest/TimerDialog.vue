@@ -1,5 +1,5 @@
 <template>
-  <el-dialog title="提示" :visible.sync="visible" width="30%">
+  <el-dialog title="提示" :visible.sync="visibleSync" width="30%">
     <span>这是一段信息</span>
     <span slot="footer" class="dialog-footer">
       <el-button @click="visible = false">取 消</el-button>
@@ -15,9 +15,15 @@ export default {
   data() {
     return {
       timerNum: 5, // 倒计时Number
+      visibleSync: false
     };
   },
   props: ["visible"],
+  watch: {
+    visible() {
+      this.visibleSync = this.visible
+    }
+  },
   mounted() {
     this.visible = true;
     const timer = setInterval(() => {
