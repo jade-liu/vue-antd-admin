@@ -50,13 +50,14 @@ export default {
     },
   },
   created() {
-    console.log('============', this.$form)
+    console.log("============", this.$form);
     this.form = this.$form.createForm(this, {
       onFieldsChange: (_, changedFields) => {
         console.log("changedFields", changedFields);
         this.$emit("change", changedFields);
       },
       mapPropsToFields: () => {
+        console.log("1111111111");
         return {
           username: this.$form.createFormField({
             value: this.username,

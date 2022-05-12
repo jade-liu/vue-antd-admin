@@ -64,6 +64,14 @@ const routes = [
       name: "事件冒泡和捕获",
     },
   },
+  {
+    path: "/nestedTest",
+    name: "NestedTest",
+    component: () => import("@/views/NestedTest/index.vue"),
+    meta: {
+      name: "嵌套测试",
+    },
+  },
 ];
 
 const router = new Router({
