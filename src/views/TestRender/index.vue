@@ -6,20 +6,20 @@
 * @Last Modified time: 2022-01-06 18:55:11
 -->
 <script>
-import test from './test'
+import test from "./test";
 export default {
   name: "",
   components: {
-    test
+    test,
   },
   data() {
     return {
       testValue: {
-        value1: '123',
-        value2: '456',
-        type: 'password',
-        href: 'wwww.baidu.com'
-      }
+        value1: "123",
+        value2: "456",
+        type: "password",
+        href: "wwww.baidu.com",
+      },
     };
   },
   props: {},
@@ -31,13 +31,12 @@ export default {
   mounted() {
     //
   },
-  render(h) {
-    return <test {...{ props: this.testValue }} />
+  render() {
+    return <test {...{ props: this.testValue }} />;
     //   const height = document.documentElement.clientHeight;
     //   const data = { style: {height: height, width: '300px', background: 'pink'} }
-      // return h('div', { style: {height: '200px', width: '300px', background: 'pink'} }, '1111')
-      // return h('el-link', { attrs: { 'href': 'wwww.baidu.com', target: '_blank', type: 'primary', underline: true} }, '1111111')
-      
+    // return h('div', { style: {height: '200px', width: '300px', background: 'pink'} }, '1111')
+    // return h('el-link', { attrs: { 'href': 'wwww.baidu.com', target: '_blank', type: 'primary', underline: true} }, '1111111')
   },
   methods: {},
 };
