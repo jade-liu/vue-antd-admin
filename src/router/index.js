@@ -57,6 +57,14 @@ const routes = [
     },
   },
   {
+    path: "/vxeTable2",
+    name: "vxeTable2",
+    component: () => import("@/views/VxeTable/copy.vue"),
+    meta: {
+      name: "Vxe Table测试2",
+    },
+  },
+  {
     path: "/eventBubblingAndCapturing",
     name: "eventBubblingAndCapturing",
     component: () => import("@/views/EventBubblingAndCapturing/index.vue"),
